@@ -56,4 +56,20 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
         return;
     }
+
+    /**
+     * This checks if a city is in the cityList
+     * @param city
+     *      This is a city to compare with the other cities
+     * @return
+     *      Return true if city is in cityList, otherwise return false
+     */
+    public boolean hasCity(City city) {
+        for (City city2 : cities) {
+            if (city2.compareTo(city) == 1 && city2.getProvinceName() == city.getProvinceName()) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
