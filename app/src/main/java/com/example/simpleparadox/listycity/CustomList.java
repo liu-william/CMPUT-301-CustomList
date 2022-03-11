@@ -82,4 +82,11 @@ public class CustomList extends ArrayAdapter<City> {
             }
         }
     }
+
+    public int countCities() {
+        int count = 0;
+        for (City city: cities) {
+        }
+        return count;
+    }
 }
