@@ -76,7 +76,7 @@ public class CustomList extends ArrayAdapter<City> {
     public void deleteCity(City city) {
         if (hasCity(city)) {
             for (int i = 0; i < cities.size(); i++) {
-                if (cities.get(i).compareTo(city) == 1 && cities.get(i).getProvinceName() == city.getProvinceName()) {
+                if (cities.get(i).compareTo(city) == 0 && cities.get(i).getProvinceName() == city.getProvinceName()) {
                     cities.remove(i);
                 }
             }
