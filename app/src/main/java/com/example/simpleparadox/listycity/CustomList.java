@@ -66,7 +66,7 @@ public class CustomList extends ArrayAdapter<City> {
      */
     public boolean hasCity(City city) {
         for (City city2 : cities) {
-            if (city2.compareTo(city) == 1 && city2.getProvinceName() == city.getProvinceName()) {
+            if (city2.compareTo(city) == 0 && city2.getProvinceName() == city.getProvinceName()) {
                 return true;
             }
         }
